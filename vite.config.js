@@ -8,14 +8,5 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    minify: 'terser',
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          gsap: ['gsap'],
-          lenis: ['lenis'],
-        },
-      },
-    },
   },
 });
